@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+# -*- coding:utf-8 -*-
+# Authour:Dreamer
+# Tmie:2018.6.20
+
+class Dog:
+
+    def eat(self):
+        print("吃肉")
+
+    def drink(self):
+        print("喝牛奶")
+
+
+dog1 = Dog()
+dog1.drink()
+print(dog1)
+
+dog2 = Dog()
+dog2.eat()
+print(dog2)
+
+# 对象的属性各自私有，两个不同对象的同名属性，互不影响
+dog1.name = "旺财"
+dog2.name = "来福"
+print(dog1.name)
+print(dog2.name)
+
